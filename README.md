@@ -20,4 +20,4 @@ This code requires the following Python3 libraries:
 1. `cd PolagonStudio/backend`
 2. Run the Polagon backend script: `python3 polagon_service.py`
 3. Open Processing. Make sure you have the `ControlP5` Processing library installed
-4. Run the Processing code. Save all SVGs to the `data/` folder in the Processing sketch. Fabrication-ready files are saved to `data/cut/`
+4. Run the `PolagonStudio` Processing sketch. Save all SVGs to the `data/` folder in the Processing sketch. Fabrication-ready files are saved to `data/cut/`
