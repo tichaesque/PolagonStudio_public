@@ -383,11 +383,13 @@ def flattenSVGLayers(filename):
 
 def getsvgshapefill(shape):
     style = shape.getAttribute('style')
-    r = re.search('fill:#(?:[0-9a-fA-F]{3}){1,2}', style)
+    r = re.search(r'fill:\s*#(?:[0-9a-fA-F]{3}){1,2}', style)
     fill = 'none'
     if r is not None:
       fill = r.group(0)
-      return fill[5:]
+
+      # return fill[5:]
+      return fill[-7:]
     return fill
 
 def buildsvgdoc(svg_shapes,svgname,img_info):
